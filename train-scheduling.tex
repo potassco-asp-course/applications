@@ -1,0 +1,41 @@
+% ----------------------------------------------------------------------
+\begin{frame}{Motivation}
+  \begin{itemize}
+  \item Increasing railway traffic demands global and flexible ways
+    for scheduling trains in order to use railway networks to capacity
+  \item Difficulty arises from dependencies among trains
+    induced by connections and shared resources
+    % (NP-complete for single track)
+    \pause
+    \medskip
+  \item \structure{Train scheduling} combines three distinct tasks
+    \begin{itemize}
+    \item Routing
+    \item Conflict detection and resolution
+    \item Scheduling
+    \end{itemize}
+    \pause
+    \smallskip
+  \item \structure{Solution} operational at Swiss Federal Railway using \clingoM{dl}
+    \begin{itemize}
+    \item ASP
+    \item Difference constraints
+    \item (Hybrid) Optimization
+    \item Heuristic directives
+    \item Multi-shot solving
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+% ----------------------------------------------------------------------
+\begin{frame}{Benchmark}
+  \begin{center}
+    \includegraphics[scale=.3]{applications/images/swiss-train-map.jpg}
+  \end{center}
+  We optimally solved the train scheduling problem on real-world railway networks spanning about 150 km with up to 467 trains within 5 minutes
+\end{frame}
+% ----------------------------------------------------------------------
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../asp"
+%%% End:

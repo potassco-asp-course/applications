@@ -1,0 +1,126 @@
+% ----------------------------------------------------------------------
+\begin{frame}{Motivation}
+  \medskip
+  \begin{itemize}
+  \item \structure{Objective}
+    How to develop robust and scalable \alt<2->{\alert<2>{\textbf<2>{KRR}}}{AI} technology
+    \\
+    for dealing with complex dynamic application scenarios?
+    \medskip
+  \item<3-> \structure{What's needed?} --- \ \alt<4->{a model scenario}{a fruit fly!}
+
+  \item<4->[]{\alert{\bf Robotic intra-logistics}} % \alt<6->{DIMACS, PDDL, \dots, RoboCup}
+    \medskip
+
+  \item<5-> \structure{Why?}
+    \begin{itemize}\normalsize
+    \item \structure{rich}        \hspace{33pt}  multi-faceted, full of variations
+    \item \structure{scalable}    \hspace{15pt}  layout, objects, granularity
+    \item \structure{measurable}  \              makespan, energy, quality of service
+    \item \structure{integrative} \hspace{3pt} mapf, data, constraints, decisions
+    \item \structure{relevant}    \hspace{15pt}  industry~4.0
+    \end{itemize}
+    \smallskip
+  \item<6-> \structure{What for?} --- \ enabling research and teaching
+  \end{itemize}
+\end{frame}
+% --------------------------------------------------------------------------------
+\begin{frame}{Robotic intra-logistics}
+  \begin{columns}
+    \begin{column}{0.69\textwidth}
+      \begin{itemize}
+      \item \alert{Robotics systems} for \alert{logistics} and \alert{warehouse automation}
+        based on many
+        \begin{itemize}
+        \item mobile robots
+        \item movable shelves
+        \end{itemize}
+        \smallskip
+      \item Main tasks: \alert{order fulfillment}, i.e.
+        \begin{itemize}
+        \item routing
+        \item order picking
+        \item replenishment
+        \end{itemize} % TODO: SPLIT HERE
+        \smallskip
+      \item Many competing \alert{industry solutions}:
+        \begin{itemize}
+        \item
+          % CIM corp
+          Amazon,
+          Dematic,
+          Genzebach,\par
+          Gray Orange,
+          Swisslog
+        \end{itemize}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.35\textwidth}  %%<--- here
+      \begin{center}
+        \includegraphics[width=\textwidth]{applications/images/kiva1.png}
+      \end{center}
+    \end{column}
+  \end{columns}
+\end{frame}
+% --------------------------------------------------------------------------------
+\begin{frame}[c]{Robotic intra-logistics at Amazon}
+  \begin{center}
+    \movie[label=amazon,width=0.9\textwidth,height=0.6\textheight,poster,showcontrols,autostart]{}{applications/videos/amazon.mp4}
+  \end{center}
+\end{frame}
+% --------------------------------------------------------------------------------
+\begin{frame}[c]{Robotic intra-logistics at Swisslog}
+  \begin{center}
+    \movie[label=amazon,width=0.9\textwidth,height=0.6\textheight,poster,showcontrols,autostart]{}{applications/videos/swisslog.mp4}
+  \end{center}
+% \url{https://www.youtube.com/watch?v=Z-n942tutXY}
+\end{frame}
+% ----------------------------------------------------------------------
+\begin{frame}{What's (not) in the picture?}
+  \bigskip
+  \begin{itemize}
+  \item \structure{Objects}
+
+    floor,
+    robots,
+    shelves,
+    products,
+    people,
+    etc.
+    \medskip
+  \item \structure{Relations}
+
+    positions,
+    carries/d,
+    capacity,
+    orientation,
+    durations,
+    etc.
+    \medskip
+  \item \structure{Actions}
+
+    move,
+    pickup,
+    putdown,
+    pick,
+    charge,
+    restock,
+    etc.
+    \medskip
+  \item \structure{Objectives}
+
+    deadlines,
+    throughput,
+    exploitation,
+    energy management,\par
+    human machine interaction,
+    etc.
+  \end{itemize}
+  \bigskip
+\end{frame}
+% ----------------------------------------------------------------------
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../asp"
+%%% End:
